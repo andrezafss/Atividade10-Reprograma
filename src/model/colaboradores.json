@@ -1,1 +1,65 @@
-[{"id":1,"nome":"Maria","sobrenome":"Santos","cpf":"123.456.789-45","cargo":"Vendedor"},{"id":2,"nome":"Jose","sobrenome":"Silva","cpf":"111.222.333-01","cargo":"Vendedor"},{"id":3,"nome":"Joao","sobrenome":"Souza","cpf":"133.454.333-45","cargo":"Vendedor"},{"id":4,"nome":"Marcela","sobrenome":"Alves","cpf":"555.351.994-96","cargo":"Gerente"},{"id":5,"nome":"Pedro","sobrenome":"Correia","cpf":"035.007.864-76","cargo":"Supervisor"},{"id":6,"nome":"Paula","sobrenome":"Santana","cpf":"973.034.007-86","cargo":"Vendedor"},{"id":7,"nome":"Mariana","sobrenome":"Machado","cpf":"048.551.473-88","cargo":"Vendedor"},{"id":8,"nome":"Luiza","sobrenome":"Assis","cpf":"787.458.989-44","cargo":"Recepcionista"},{"id":9,"nome":"Marcos","sobrenome":"Ferreira","cpf":"666.757.888-08","cargo":"Recepcionista"}]
+[
+    {
+        "id": 1,
+        "nome": "Maria",
+        "sobrenome": "Santos",
+        "cpf": "123.456.789-45",
+        "cargo": "Vendedor"
+    },
+    {
+        "id": 2,
+        "nome": "Jose",
+        "sobrenome": "Silva",
+        "cpf": "111.222.333-01",
+        "cargo": "Vendedor"
+    },
+    {
+        "id": 3,
+        "nome": "Joao",
+        "sobrenome": "Souza",
+        "cpf": "133.454.333-45",
+        "cargo": "Vendedor"
+    },
+    {
+        "id": 4,
+        "nome": "Marcela",
+        "sobrenome": "Alves",
+        "cpf": "555.351.994-96",
+        "cargo": "Gerente"
+    },
+    {
+        "id": 5,
+        "nome": "Pedro",
+        "sobrenome": "Correia",
+        "cpf": "035.007.864-76",
+        "cargo": "Supervisor"
+    },
+    {
+        "id": 6,
+        "nome": "Paula",
+        "sobrenome": "Santana",
+        "cpf": "973.034.007-86",
+        "cargo": "Vendedor"
+    },
+    {
+        "id": 7,
+        "nome": "Mariana",
+        "sobrenome": "Machado",
+        "cpf": "048.551.473-88",
+        "cargo": "Vendedor"
+    },
+    {
+        "id": 8,
+        "nome": "Luiza",
+        "sobrenome": "Assis",
+        "cpf": "787.458.989-44",
+        "cargo": "Recepcionista"
+    },
+    {
+        "id": 9,
+        "nome": "Marcos",
+        "sobrenome": "Ferreira",
+        "cpf": "666.757.888-08",
+        "cargo": "Recepcionista"
+    }
+]

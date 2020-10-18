@@ -49,14 +49,11 @@ const putLivro = (req, res) => {
     const id = req.params.id;
   
     const livroModificado = livros.find((livro) => livro.id == id);
-    console.log(livroModificado)
-  
+     
     const livroAtualizado = req.body;
-    console.log(livroAtualizado)
-
+    
     const index = livros.indexOf(livroModificado);
-    console.log(index)
-  
+      
     livros.splice(index, 1, livroAtualizado)
     console.log(livros)
 

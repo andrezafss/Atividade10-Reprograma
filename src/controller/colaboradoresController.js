@@ -45,9 +45,64 @@ const deleteColaborador = (req, res) => {
   
 }
 
+const putColaborador = (req, res) => {
+  try{
+    const id = req.params.id;
+  
+    const colaboradorModificado = colaboradores.find((colaborador) => colaborador.id == id);
+      
+    const colaboradorAtualizado = req.body;
+    
+    const index = colaboradores.indexOf(colaboradorModificado);
+      
+    colaboradores.splice(index, 1, colaboradorAtualizado)
+    console.log(colaboradores)
+
+    fs.writeFile("./src/model/colaboradores.json", JSON.stringify(colaboradores), 'utf8', function(err){
+      if(err){
+        return res.status(424).send({message: err});
+      }
+        console.log(colaboradorAtualizado)
+    })
+
+    res.status(200).send(colaboradores)
+}catch(err){
+  return res.status(424).send({message: err});
+}
+
+}
+
+const patchColaborador = (req, res) => {
+  const id = req.params.id;
+  const atualizacao = req.body;
+
+  try {
+    const colaboradorModificado =  colaboradores.find((colaborador) => colaborador.id == id);
+    console.log(Object.keys(colaboradorModificado))    
+
+    Object.keys(atualizacao).forEach((chave) => {
+      colaboradorModificado[chave] = atualizacao[chave]
+    });
+
+    fs. writeFile("./src/model/colaboradores.json", JSON.stringify(colaboradores), "utf8", function(err){
+      if (err) {
+        return res.status(424).send({ message: err });        
+      }
+      console.log("Arquivo atualizado com sucesso");
+    });
+
+    return res.status(200).send(colaboradores);
+  } catch (err) {
+    return res.status(424).send({ message: err });
+  }
+
+}
+
 module.exports = {
   getAllColaborador,
   getByIdColaborador,
   postColaborador,
-  deleteColaborador
+  deleteColaborador,
+  putColaborador,
+  patchColaborador
 };
